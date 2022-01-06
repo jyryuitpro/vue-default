@@ -19,7 +19,8 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    // component: Contact
+    component: () => import( /* webpackChunkName: "contact", webpackPrefetch: true */ '../views/Contact.vue')
   },
 ]
 
