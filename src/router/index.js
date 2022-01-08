@@ -35,14 +35,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Basic.vue')
   },
   {
+    path: '/databinding',
+    name: 'DataBinding',
+    component: () => import(/* webpackChunkName: "about" */ '../views/DataBinding.vue')
+  },
+  {
     path: '/databindinghtml',
     name: 'DataBindingHtml',
     component: () => import(/* webpackChunkName: "about" */ '../views/DataBindingHtml.vue')
   },
   {
-    path: '/databinding',
-    name: 'DataBinding',
-    component: () => import(/* webpackChunkName: "about" */ '../views/DataBinding.vue')
+    path: '/example',
+    name: 'Example',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example.vue')
   },
 ]
 
