@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Example",
+  name: "Example01",
   components: {},
   data() {
     return {

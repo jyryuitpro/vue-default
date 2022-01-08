@@ -45,9 +45,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/DataBindingHtml.vue')
   },
   {
-    path: '/example',
-    name: 'Example',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Example.vue')
+    path: '/example01',
+    name: 'Example01',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example01.vue')
+  },
+  {
+    path: '/example02',
+    name: 'Example02',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example02.vue')
   },
 ]
 
