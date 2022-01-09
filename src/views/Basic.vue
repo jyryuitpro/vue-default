@@ -26,7 +26,7 @@ export default {
   unmounted() {
     //다른 Component로 이동할 때, 실행
   },
-  methods() {
+  methods: {
     //Component안에서 사용할 메소드(함수) 정의
   },
 }
