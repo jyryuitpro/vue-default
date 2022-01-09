@@ -34,7 +34,9 @@ export default {
   methods: {
     //Component안에서 사용할 메소드(함수) 정의
     callChildFunc() {
-      this.$refs.child_component.$refs.child_btn.click();
+      //$refs html 객체접근 키워드
+      // this.$refs.child_component.$refs.child_btn.click();
+      this.$refs.child_component.childFunc();
     },
   },
 }
