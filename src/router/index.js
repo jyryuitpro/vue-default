@@ -90,9 +90,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Example09.vue')
   },
   {
-    path: '/example10',
-    name: 'Example10',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Example10.vue')
+    path: '/search',
+    name: 'Search',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Search.vue')
+  },
+  {
+    path: '/save',
+    name: 'Save',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Save.vue')
   },
 ]
 
