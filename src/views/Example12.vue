@@ -37,6 +37,7 @@ export default {
       //$refs html 객체접근 키워드
       // this.$refs.child_component.$refs.child_btn.click();
       this.$refs.child_component.childFunc();
+      this.$refs.child_component.msg = '부모 컴포넌트에서 변경한 메세지';
     },
   },
 }
