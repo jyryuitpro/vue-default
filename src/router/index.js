@@ -69,6 +69,31 @@ const routes = [
     name: 'Example05',
     component: () => import(/* webpackChunkName: "about" */ '../views/Example05.vue')
   },
+  {
+    path: '/example06',
+    name: 'Example06',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example06.vue')
+  },
+  {
+    path: '/example07',
+    name: 'Example07',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example07.vue')
+  },
+  {
+    path: '/example08',
+    name: 'Example08',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example08.vue')
+  },
+  {
+    path: '/example09',
+    name: 'Example09',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example09.vue')
+  },
+  {
+    path: '/example10',
+    name: 'Example10',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example10.vue')
+  },
 ]
 
 const router = createRouter({
