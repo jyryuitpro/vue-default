@@ -104,6 +104,11 @@ const routes = [
     name: 'ServerData',
     component: () => import(/* webpackChunkName: "about" */ '../views/ServerData.vue')
   },
+  {
+    path: '/example10',
+    name: 'Example10',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Example10.vue')
+  },
 ]
 
 const router = createRouter({
