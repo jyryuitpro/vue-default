@@ -2,6 +2,7 @@
   <div>
     <button type="button" @click="childFunc" ref="child_btn">자식에 있는 클릭</button>
     <h1>{{msg}}</h1>
+    <button type="button" @click="sendFromChild" ref="child_btn">자식 컴포넌트 버튼</button>
   </div>
 </template>
 
@@ -11,7 +12,8 @@ export default {
   components: {},
   data() {
     return {
-      msg: '자식에 있던 메세지'
+      // msg: '자식에 있던 메세지',
+      msg: '자식 컴포넌트로 부터 보내는 메세지',
     };
   },
   setup() {
@@ -30,6 +32,9 @@ export default {
     //Component안에서 사용할 메소드(함수) 정의
     childFunc() {
       alert('부모 컴포넌트에서 직접 발생시킨 이벤트');
+    },
+    sendFromChild() {
+      this.$emit('send-message', this.msg);
     },
   },
 }
