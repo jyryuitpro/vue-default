@@ -1,6 +1,8 @@
 <template>
   <div>
     <select v-model="city">
+      <!-- 반복되는 부분 -->
+<!--      <option v-bind:value="city.v" :key="i" v-for="(city, i) in options">{{city.t}}</option>-->
       <option :value="city.v" :key="i" v-for="(city, i) in options">{{city.t}}</option>
     </select>
     <table>
@@ -13,6 +15,7 @@
         </tr>
       </thead>
       <tbody>
+        <!-- 반복되는 부분 -->
         <tr :key="i" v-for="(product, i) in productList">
           <td>{{product.product_name}}</td>
           <td>{{product.price}}</td>
