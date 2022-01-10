@@ -1,4 +1,5 @@
 <template>
+  <!-- Vue는 기본적으로 가장 상위 태그가 있어야 한다. (감싸줘야합니다.)-->
   <div>
     <h1>{{sampleData}}</h1>
     <div>{{sampleData2}}</div>
