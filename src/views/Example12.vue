@@ -1,10 +1,12 @@
 <template>
   <div>
 <!--    ref == id-->
-    <button type="button" @click="callChildFunc">부모에 있는 클릭</button>
+<!--    <button type="button" @click="callChildFunc">부모에 있는 클릭</button>-->
+<!--    <ChildComponentEvent ref="child_component"/>-->
+<!--    <h1>{{parentMsg}}</h1>-->
+<!--    <ChildComponentEvent @send-message="sendMessage"/>-->
+    <button type="button" @click="showData">부모 버튼</button>
     <ChildComponentEvent ref="child_component"/>
-    <h1>{{parentMsg}}</h1>
-    <ChildComponentEvent @send-message="sendMessage"/>
   </div>
 </template>
 
@@ -20,6 +22,11 @@ export default {
     return {
       parentMsg: '',
     };
+  },
+  computed: {
+    msg() {
+      return this.$refs.child_component.msg;
+    },
   },
   setup() {
 
@@ -44,6 +51,9 @@ export default {
     sendMessage(data) {
       alert(data);
       this.parentMsg = data;
+    },
+    showData() {
+      alert(this.msg);
     },
   },
 }
