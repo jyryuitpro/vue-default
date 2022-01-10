@@ -119,6 +119,11 @@ const routes = [
     name: 'Example12',
     component: () => import(/* webpackChunkName: "about" */ '../views/Example12.vue')
   },
+  {
+    path: '/slot',
+    name: 'SlotUseModalLayout',
+    component: () => import(/* webpackChunkName: "about" */ '../views/SlotUseModalLayout.vue')
+  },
 ]
 
 const router = createRouter({
