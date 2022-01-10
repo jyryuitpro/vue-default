@@ -1,6 +1,7 @@
 <template>
   <div>
-<!--    <img v-bind:src="url" style="height: 100px; width: auto;"/>-->
+    <img v-bind:src="url" style="height: 100px; width: auto;"/>
+    <br>
     <input type="text" v-model="textValue" />
     <button type="button" v-bind:disabled="textValue == ''">Click</button>
   </div>
