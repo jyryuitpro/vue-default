@@ -12,6 +12,7 @@
     </select>
     <br>
 <!--    <input type="text" v-model="textValue" @keyup.enter="showValue" />-->
+    <!-- @keyup: 모든 key 적용 -->
     <input type="text" v-model="textValue" @keyup="showValue" />
   </div>
 </template>
