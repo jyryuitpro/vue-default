@@ -20,9 +20,11 @@ export default {
       //fullName: this.lastName + this.firstName,
     };
   },
-  //로그인 유무 파악
+  //로그인 유무 파악에서 사용가능
   computed: {
     fullName() {
+      //한번만 연산하면 끝
+      //변경사항을 항상 감시하고 반영해준다.
       return this.lastName + this.firstName;
     },
   },
@@ -41,6 +43,7 @@ export default {
   methods: {
     //Component안에서 사용할 메소드(함수) 정의
     getFullName() {
+      //호출할 때마다, 동일 연산 계속 반복
       return this.lastName + this.firstName;
     },
   },
