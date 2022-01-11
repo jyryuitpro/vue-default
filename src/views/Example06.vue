@@ -1,11 +1,15 @@
 <template>
   <div>
-<!--    <h1 v-if="bRender">bRender값이 true이면, h1 블록이 화면에 보여지게 됩니다.</h1>-->
-<!--    <h1 v-else>bRender값이 false이면, h1 블록이 화면에 보여지게 됩니다.</h1>-->
-<!--    <h1 v-if="type == 'A'">A</h1>-->
-<!--    <h1 v-else-if="type == 'B'">B</h1>-->
-<!--    <h1 v-else-if="type == 'C'">C</h1>-->
-<!--    <h1 v-else>Other</h1>-->
+    <!-- 일회성 -->
+    <!-- 조건에 만족하지 않으면 랜더링 되지 않음 -->
+    <h1 v-if="bRender">bRender값이 true이면, h1 블록이 화면에 보여지게 됩니다.</h1>
+    <h1 v-else>bRender값이 false이면, h1 블록이 화면에 보여지게 됩니다.</h1>
+    <h1 v-if="type == 'A'">A</h1>
+    <h1 v-else-if="type == 'B'">B</h1>
+    <h1 v-else-if="type == 'C'">C</h1>
+    <h1 v-else>Other</h1>
+    <!-- 반복성-->
+    <!-- v-show는 else가 없으며, 조건에 상관없이 랜더링 됨 -->
     <h1 v-show="bRender">A</h1>
   </div>
 </template>
