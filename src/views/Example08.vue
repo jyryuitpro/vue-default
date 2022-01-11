@@ -25,6 +25,7 @@ export default {
     fullName() {
       //한번만 연산하면 끝
       //변경사항을 항상 감시하고 반영해준다.
+      //새로 선언된 필드에 사용된 데이터 필드의 변경사항 감시하면서 새롭게 선언된 필드를 갱신한다.
       return this.lastName + this.firstName;
     },
   },
