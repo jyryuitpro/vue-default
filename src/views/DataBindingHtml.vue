@@ -1,4 +1,5 @@
 <template>
+  <!-- html -->
   <div v-html="htmlString"></div>
 </template>
 
