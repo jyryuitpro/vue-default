@@ -1,7 +1,7 @@
 <!-- Vue.js 기본 구조 -->
 <template>
   <div>
-    <!-- 양방향 데이터 통신 -->
+    <!-- 양방향 데이터 바인딩 (two way data binding) -->
     <h1>{{title}}</h1>
     <!-- v-model는 value와 유사함 -->
     <input type="text" v-model="title" />
