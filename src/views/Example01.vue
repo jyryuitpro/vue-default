@@ -3,9 +3,9 @@
     <!-- v-model == value -->
     <input type="text" v-model="valueModel"/><!-- 문자열로 인식 -->
     <br>
-    <input type="number" v-model.number="valueModel2"/><!-- 숫자로 인식 -->
+    <input type="number" v-model.number="valueModel2"/><!-- 숫자로 인식하려면 v-model.number를 사용 -->
     <br>
-    <textarea v-model="valueModel3"></textarea>
+    <textarea v-model="valueModel3"></textarea><!-- textarea의 경우에 실제로 데이터 바인딩하려면 v-model을 사용 -->
     <br>
     <div>{{valueModel3}}</div>
   </div>
