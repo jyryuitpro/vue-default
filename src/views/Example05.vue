@@ -33,12 +33,14 @@ export default {
   components: {},
   data() {
     return {
+      //배열
       options: [
         {v: '02', t: '서울'},
         {v: '21', t: '부산'},
         {v: '064', t: '제주'},
       ],
       city: '064',
+      //배열
       productList: [
         {product_name: '기계식 키보드', price: 25000, delivery_price: 5000, category: '전자제품'},
         {product_name: '마우스', price: 9000, delivery_price: 5000, category: '전자제품'},
