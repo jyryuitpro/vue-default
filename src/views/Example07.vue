@@ -3,6 +3,7 @@
 <!--    <button type="button" v-on:click="increaseCounter">Add 1</button>-->
     <button type="button" @click="increaseCounter">Add 1</button>
     <p>The count is : {{counter}}</p>
+    <!-- method 다중 호출 -->
     <button type="button" @click="one(), two()">One Two</button>
     <br>
     <select v-model="city" @change="changeSelect">
