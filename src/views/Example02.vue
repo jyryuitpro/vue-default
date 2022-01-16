@@ -7,7 +7,7 @@
       <option value="064">제주</option>
     </select>
     <br>
-<!-- checkbox에서의 v-model은 checked와 연결이 된다. -->
+<!-- checkbox에서의 v-model은 checked 속성과 연결이 된다. -->
 <!--    <label><input type="checkbox" v-model="checked">{{checked}}</label>-->
 <!--    <br>-->
     <label><input type="checkbox" value="서울" v-model="checked">서울</label>
@@ -16,7 +16,7 @@
     <br>
     <span>체크한 지역: {{checked}}</span>
     <br>
-<!-- radio v-model은 checked와 연결이 된다. -->
+<!-- radio v-model은 checked 속성과 연결이 된다. -->
     <label><input type="radio" value="서울" v-model="picked"/>서울</label>
     <label><input type="radio" value="부산" v-model="picked"/>부산</label>
     <label><input type="radio" value="제주" v-model="picked"/>제주</label>
