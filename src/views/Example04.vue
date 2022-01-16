@@ -2,9 +2,12 @@
 <!-- 속성에 데이터 바인딩하는 방법 v-bind:를 사용한다. -->
 
 <!-- 앞에 class에 뒤에 있는 class가 add됨. -->
-<!--  <div class="container" v-bind:class="{'active': isActive, 'text-red': isRed}">Class Binding</div>-->\
+<!--  <div class="container" v-bind:class="{'active': isActive, 'text-red': isRed}">Class Binding</div>-->
+
 <!--  <div class="container" v-bind:class="[activeClass, redClass]">Class Binding</div>-->
+
 <!--  <div v-bind:style="styleObject">인라인 스타일 Binding</div>-->
+
   <div v-bind:style="[baseStyle, addStyle]">인라인 스타일 Binding</div>
 </template>
 
@@ -17,9 +20,11 @@ export default {
       // isActive: true,
       // isRed: true,
 
+      //배열
       // activeClass: 'active',
       // redClass: 'text-red',
 
+      //Object
       //인라인 스타일은 카멜케이스로 작성합니다.
       // styleObject: {
       //   backgroundColor: 'yellow',
@@ -27,6 +32,7 @@ export default {
       //   fontWeight: 'bold',
       // },
 
+      //배열
       baseStyle: 'background-color: yellow; width: 100%; height: 200px;',
       addStyle: 'color: red; font-weight: bold;'
     };
